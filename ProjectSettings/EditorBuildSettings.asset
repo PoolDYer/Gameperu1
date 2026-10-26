@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MachuPicchu/Scenes/ReferenceSector.unity
+    guid: 86abb25505f4c55da012450b331390ec
+  - enabled: 1
     path: Assets/MachuPicchu/Scenes/Prototype.unity
     guid: 8366c63bdcba14577912a66317b2a1c3
   m_configObjects: {}

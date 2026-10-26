@@ -1,0 +1,7 @@
+{
+  "unityReferences": "6000.6.7f1",
+  "runtimeCSharp": "passed",
+  "editorCSharp": "passed",
+  "editorExecution": "not covered",
+  "physicsAndRendering": "not covered"
+}

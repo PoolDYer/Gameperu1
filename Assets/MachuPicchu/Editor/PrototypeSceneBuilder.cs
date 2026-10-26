@@ -19,10 +19,10 @@ namespace MachuPicchu.Editor
             var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
             var world=new GameObject("Interpretive prototype — not surveyed").AddComponent<PrototypeWorld>();
             world.Build();
-            var persisted=new HashSet<int>();
+            var persisted=new HashSet<UnityEngine.Object>();
             Action<UnityEngine.Object,string> save=(asset,name)=>
             {
-                if (asset && !AssetDatabase.Contains(asset) && persisted.Add(asset.GetInstanceID()))
+                if (asset && !AssetDatabase.Contains(asset) && persisted.Add(asset))
                     AssetDatabase.CreateAsset(asset,AssetDatabase.GenerateUniqueAssetPath(root+"/"+name+".asset"));
             };
             foreach (var layer in world.BuiltTerrain.terrainData.terrainLayers)

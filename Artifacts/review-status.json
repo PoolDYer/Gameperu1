@@ -17,19 +17,29 @@
     "Complete site coverage not established"
   ],
   "unverified": [
-    "Unity 6.6 compilation and import",
-    "Physics, stair traversal, all door clearances",
+    "Unity project import and Play mode",
+    "Physics and complete stair/door traversal",
     "Standalone game build",
     "Performance and LOD budget",
-    "Real horizontal orientation and vertical datum"
+    "Measured topography and exact archaeological fidelity"
   ],
   "network": {
     "https://machupicchu360.com/visita-virtual/vista-panoramica/": "HTTP 200",
     "https://machupicchu360.com/tour-virtual-360/": "HTTP 200",
-    "https://machupicchu.s3.us-east-2.amazonaws.com/04-vista-panoramica/index.htm": "proxy tunnel HTTP 403",
-    "https://360machupicchu.s3.us-east-2.amazonaws.com/index.htm": "proxy tunnel HTTP 403",
-    "https://services.api.unity.com/unity/editor/release/v1/releases?version=6000.6&limit=1": "proxy tunnel HTTP 403",
+    "https://machupicchu.s3.us-east-2.amazonaws.com/04-vista-panoramica/index.htm": "HTTP 200; reference images inspected",
+    "https://360machupicchu.s3.us-east-2.amazonaws.com/index.htm": "HTTP 200; map and 25 positions located",
+    "https://services.api.unity.com/unity/editor/release/v1/releases?version=6000.6&limit=1": "HTTP 200; official 6000.6.7f1 release found",
     "https://doi.org/10.18800/boletindearqueologiapucp.202402.005": "proxy tunnel HTTP 403"
   },
-  "geometry_changed_in_this_review": false
+  "geometry_changed_in_this_review": true,
+  "currentSector": "Artifacts/ReferenceSector_VisualEstimate.blend",
+  "unityEditor": {
+    "version": "6000.6.7f1",
+    "installed": true,
+    "officialArchiveChecksumVerified": true,
+    "runtimeCSharp": "compiled against official libraries",
+    "editorCSharp": "compiled against official libraries",
+    "batchImport": "blocked: no valid Unity Editor licence",
+    "exitCode": 198
+  }
 }
