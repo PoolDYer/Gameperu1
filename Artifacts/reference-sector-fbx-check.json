@@ -1,0 +1,11 @@
+{
+  "fbxMeshCount": 40,
+  "groundExtentMeters": [
+    50.0,
+    44.0,
+    11.780999183654785
+  ],
+  "towerWallHeightMeters": 4.080876350402832,
+  "stairHeightMeters": 11.971943855285645,
+  "validation": "Blender FBX import; geometric relief present; archaeological accuracy and Unity not validated"
+}

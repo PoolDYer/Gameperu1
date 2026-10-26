@@ -12,7 +12,30 @@ El render se puede ver sin conexión abriendo **Artifacts/REVIEW.html**.
 
 ![Render real del prototipo interpretativo; no reconstrucción fiel](Artifacts/Overview_INTERPRETIVE.png)
 
-## Entrega
+## Corrección visual del sector del torreón
+
+Se añadió un estudio independiente de la figura 10 del PDF: roca elevada, muro
+curvo, plataformas a distintas cotas, recintos escalonados y escalera lateral.
+**Las dimensiones de este sector son estimaciones visuales; no es una réplica
+exacta ni una reconstrucción completa de la ciudadela.** Su área de trabajo local
+es 50 × 44 m; no modifica ni reemplaza el límite general de 200 × 530 m.
+
+![Render del sector corregido, con cotas y formas estimadas](Artifacts/ReferenceSector_VisualEstimate.png)
+
+- Fuente editable: `Artifacts/ReferenceSector_VisualEstimate.blend`.
+- FBX: `Assets/Resources/MachuPicchu/ReferenceSector_VisualEstimate.fbx`.
+- En Unity: **Machu Picchu > Crear escena del sector de referencia**. Genera una
+  escena separada con MeshColliders y controlador; requiere comprobar la compilación
+  y la física en Unity 6.6. El suelo de este sector es una malla editable en Blender,
+  no un TerrainData nativo.
+- Generación: `blender -b --threads 4 --python-exit-code 1 --python Tools/build_reference_sector.py`.
+
+En esta revisión sí se pudieron consultar los servidores de panorámicas. No se
+redistribuyen sus fotografías como texturas. Se localizaron los datos oficiales
+de Unity 6000.6.7f1; descargar el editor desde download.unity3d.com sigue bloqueado
+por el proxy. El dominio quedó añadido al borrador de configuración.
+
+## Prototipo general anterior — no aceptado como reconstrucción
 
 - Superficie de **200 m de ancho × 530 m de largo**, con relieve y terrazas.
 - Heightmap de **513 × 513** muestras para TerrainData nativo, pintable y esculpible.

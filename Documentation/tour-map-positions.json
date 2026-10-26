@@ -1,0 +1,210 @@
+{
+  "source": "https://360machupicchu.s3.us-east-2.amazonaws.com/script_general.js",
+  "mapImageSource": "https://360machupicchu.s3.us-east-2.amazonaws.com/media/map_C0033C5A_81B1_ED4E_41CC_4729695C44FD_es_0.png",
+  "mapCoordinateWidth": 1679,
+  "mapCoordinateHeight": 1000,
+  "georeferenced": false,
+  "metricScaleKnown": false,
+  "points": [
+    {
+      "id": "panorama_27E01ECB_163F_F183_419D_888D1C2D5A48",
+      "name": "24 Montaña HuaynaPicchu",
+      "mapX": 1662.63,
+      "mapY": 742.91,
+      "viewAngle": -68.65,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_214599F2_161D_739D_41AE_063FC190377D",
+      "name": "8 Jardín Botánico",
+      "mapX": 969.19,
+      "mapY": 490.19,
+      "viewAngle": 162.41,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_3DFD51C0_15FB_B3FD_41A4_209093DE2198",
+      "name": "2 Casa del Guardián",
+      "mapX": 492.46,
+      "mapY": 418.08,
+      "viewAngle": 55.64,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_F722EC47_12F7_DADE_41B3_D9A39F177862",
+      "name": "25 Plaza Sagrada",
+      "mapX": 1024.79,
+      "mapY": 431.43,
+      "viewAngle": 97.95,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_269DBE74_1634_D085_4187_B0074054414C",
+      "name": "15 Ingreso a HuaynaPicchu",
+      "mapX": 1597.66,
+      "mapY": 595.66,
+      "viewAngle": -19.03,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_7A23C06C_161D_4AD3_4179_BE436ECC3964",
+      "name": "14 Roca Sagrada",
+      "mapX": 1551.61,
+      "mapY": 569.11,
+      "viewAngle": 160.24,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_272EDC6F_163D_5083_41AD_9524056341DA",
+      "name": "20 Fuentes",
+      "mapX": 861.18,
+      "mapY": 550.63,
+      "viewAngle": -215.93,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_2296F53A_161B_508D_4192_B54A1D82B716",
+      "name": "11 Templo Principal",
+      "mapX": 1060.15,
+      "mapY": 435.96,
+      "viewAngle": 58.64,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_2291BD27_1614_F083_418A_57240AF26E87",
+      "name": "12 Intihuatana",
+      "mapX": 1184.09,
+      "mapY": 431.86,
+      "viewAngle": -156.7,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_273525D1_163C_D39F_41AA_0AC806A59E3C",
+      "name": "23 Depósitos",
+      "mapX": 496.92,
+      "mapY": 792.26,
+      "viewAngle": 162.05,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_233DB9D5_161B_5387_418F_43A94188520E",
+      "name": "6 Puerta de Ingreso",
+      "mapX": 690.43,
+      "mapY": 380.17,
+      "viewAngle": 96.37,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_3DAB082E_15FD_5085_41A5_D024839F440D",
+      "name": "5 Recinto de las 10 Puertas",
+      "mapX": 393.36,
+      "mapY": 273.88,
+      "viewAngle": 128.14,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_27497C63_163D_D083_41A9_6B1A437D1B67",
+      "name": "21 Templo del Sol",
+      "mapX": 829.99,
+      "mapY": 519.26,
+      "viewAngle": 100.23,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_27283FC6_163B_AF85_41AA_AFB6B0FFD96C",
+      "name": "16 Grupo de las 3 Portadas",
+      "mapX": 1207.67,
+      "mapY": 646.82,
+      "viewAngle": -0.78,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_230B2962_161C_D0BD_41AC_BB52A7185A92",
+      "name": "9 Casa del Sacerdote",
+      "mapX": 1004,
+      "mapY": 463.63,
+      "viewAngle": 77.58,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_2759B036_163D_5085_414C_4EAA81CB8464",
+      "name": "22 Tumba Real",
+      "mapX": 827.43,
+      "mapY": 553.12,
+      "viewAngle": null,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_27914F03_163B_B083_4194_B1B9FE5B468C",
+      "name": "17 Espejos de Agua",
+      "mapX": 993.55,
+      "mapY": 691.44,
+      "viewAngle": -53.19,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_22A85899_161B_518F_41A7_722C211E583F",
+      "name": "10 Templo de las 3 Ventanas",
+      "mapX": 1042.59,
+      "mapY": 471.94,
+      "viewAngle": 194.48,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_D5518352_FC5F_B4A7_41E0_6B8FC68BBA80",
+      "name": "7 Zona de las Canteras",
+      "mapX": 869.02,
+      "mapY": 441.61,
+      "viewAngle": 50.92,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_22894B9D_1615_5787_41AE_479DD78CE0FC",
+      "name": "13 Plaza Principal",
+      "mapX": 1227.28,
+      "mapY": 519.02,
+      "viewAngle": 138.66,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_2758E06B_163D_5083_41A9_49F19AA3EABA",
+      "name": "19 Casa del Inca",
+      "mapX": 892.25,
+      "mapY": 542.67,
+      "viewAngle": -127.22,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_279EDC9E_163C_D185_41B0_5DCD9BE48173",
+      "name": "18 Templo del Cóndor",
+      "mapX": 914.35,
+      "mapY": 669.04,
+      "viewAngle": -0.12,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_3DB0E05C_15F5_5085_41AC_8A42FA3DDC93",
+      "name": "1 Control de Ingreso",
+      "mapX": 155.24,
+      "mapY": 737.48,
+      "viewAngle": 184.73,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_3A08C967_15FD_D083_41AA_1F1DEE213393",
+      "name": "3 Roca Funeraria",
+      "mapX": 460.97,
+      "mapY": 408.93,
+      "viewAngle": -39.52,
+      "mapUnits": "pixels, not metres"
+    },
+    {
+      "id": "panorama_3A3DFEFD_15FC_D187_4193_30FB95395B1B",
+      "name": "4 Vista Panorámica",
+      "mapX": 470.42,
+      "mapY": 304.96,
+      "viewAngle": 91.08,
+      "mapUnits": "pixels, not metres"
+    }
+  ]
+}

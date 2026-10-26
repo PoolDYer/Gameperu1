@@ -1,0 +1,13 @@
+{
+  "status": "Partial visual reconstruction study, not measured or complete Machu Picchu",
+  "meshObjects": 40,
+  "vertices": 70937,
+  "groundExtentMeters": [
+    50,
+    44
+  ],
+  "towerWallBaseMeters": 11.2,
+  "towerWallTopMeters": 15.28,
+  "units": "metres, estimated",
+  "source": "User PDF figure 10 plus panoramic visual references"
+}
