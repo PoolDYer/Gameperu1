@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace MachuPicchu
 {
@@ -18,15 +19,33 @@ namespace MachuPicchu
         void OnDisable() { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
-            if (Input.GetMouseButtonDown(0))
-            { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
+            var keyboard = Keyboard.current;
+            var mouse = Mouse.current;
+            if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame)
+            {
+                Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
+                return;
+            }
+            bool capturedThisFrame = false;
+            if (mouse != null && mouse.leftButton.wasPressedThisFrame && Cursor.lockState != CursorLockMode.Locked)
+            {
+                Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
+                capturedThisFrame = true;
+            }
             if (Cursor.lockState != CursorLockMode.Locked) return;
-            transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity, 0);
-            pitch = Mathf.Clamp(pitch - Input.GetAxis("Mouse Y") * sensitivity, -85, 85);
+            Vector2 look = mouse != null && !capturedThisFrame ? mouse.delta.ReadValue() * (sensitivity * .1f) : Vector2.zero;
+            transform.Rotate(0, look.x, 0);
+            pitch = Mathf.Clamp(pitch - look.y, -85, 85);
             if (view != null) view.localRotation = Quaternion.Euler(pitch, 0, 0);
-            Vector3 input = Vector3.ClampMagnitude(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")), 1);
+            Vector3 input = Vector3.zero;
+            if (keyboard != null)
+            {
+                input.x = ((keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed) ? 1 : 0)
+                    - ((keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed) ? 1 : 0);
+                input.z = ((keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed) ? 1 : 0)
+                    - ((keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed) ? 1 : 0);
+                input = Vector3.ClampMagnitude(input, 1);
+            }
             if (controller.isGrounded && verticalSpeed < 0) verticalSpeed = -2;
             verticalSpeed += Physics.gravity.y * Time.deltaTime;
             Vector3 motion = transform.TransformDirection(input) * speed;

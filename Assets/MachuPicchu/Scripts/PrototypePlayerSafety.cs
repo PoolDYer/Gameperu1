@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 namespace MachuPicchu
 {
     [RequireComponent(typeof(CharacterController))]
@@ -9,7 +10,7 @@ namespace MachuPicchu
         void Update()
         {
             Vector3 p=transform.position;
-            if (Input.GetKeyDown(KeyCode.R) || p.y < -10 || p.x < -2 || p.z < -2 || p.x > width+2 || p.z > length+2)
+            if ((Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame) || p.y < -10 || p.x < -2 || p.z < -2 || p.x > width+2 || p.z > length+2)
             {
                 var controller=GetComponent<CharacterController>(); controller.enabled=false;
                 transform.position=spawn; controller.enabled=true;

@@ -26,8 +26,9 @@ considera una reconstrucción válida del lugar.
 
 1. Descargar este repositorio mediante **Code > Download ZIP** y extraerlo.
 2. Abrirlo con Unity **6.6**. Se ha fijado la versión oficial **6000.6.7f1**.
-   Usar **Built-in Render Pipeline** y **Active Input Handling: Input Manager (Old)**
-   o **Both**.
+   Usar **Built-in Render Pipeline** y **Active Input Handling: Input System Package (New)**.
+   El proyecto incluye Input System 1.20.1, verificado en el paquete oficial de Unity
+   6000.6.7f1. Aceptar el reinicio del editor cuando se solicite.
 3. Para generar una escena editable y verla fuera de Play, ejecutar
    **Machu Picchu > Crear escena del sector de referencia**. Se guarda una carpeta
    nueva en `Assets/MachuPicchu/Generated/ReferenceSector_...` sin sobrescribir

@@ -15,6 +15,9 @@ def main():
     refs={p.name:p for p in (UNITY/'UnityReferenceAssemblies/unity-4.8-api').glob('*.dll')}
     refs.update({p.name:p for p in (UNITY/'UnityReferenceAssemblies/unity-4.8-api/Facades').glob('*.dll')})
     refs.update({p.name:p for p in (UNITY/'Managed/UnityEngine').glob('*.dll')})
+    input_dll=UNITY/'Resources/PackageManager/ProjectTemplates/libcache/com.unity.template.urp-blank-17.2.6/ScriptAssemblies/Unity.InputSystem.dll'
+    if not input_dll.is_file():raise RuntimeError('Official bundled Input System assembly is missing')
+    refs['Unity.InputSystem.dll']=input_dll
     with tempfile.TemporaryDirectory(prefix='machu-csharp-') as directory:
         directory=Path(directory)
         for category,source in [('Runtime','Scripts'),('Editor','Editor')]:
@@ -29,6 +32,6 @@ def main():
             print(result.stdout,end='');print(result.stderr,end='')
             if result.returncode:raise SystemExit(result.returncode)
             assert target.is_file();print(category+' C# assembly compiled successfully')
-    report={'unityReferences':'6000.6.7f1','runtimeCSharp':'passed','editorCSharp':'passed','editorExecution':'not covered','physicsAndRendering':'not covered'}
+    report={'unityReferences':'6000.6.7f1','inputSystem':'1.20.1 (official editor bundle)','runtimeCSharp':'passed','editorCSharp':'passed','editorExecution':'not covered','physicsAndRendering':'not covered'}
     (ROOT/'Artifacts/csharp-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 if __name__=='__main__':main()

@@ -1,5 +1,6 @@
 {
   "unityReferences": "6000.6.7f1",
+  "inputSystem": "1.20.1 (official editor bundle)",
   "runtimeCSharp": "passed",
   "editorCSharp": "passed",
   "editorExecution": "not covered",
