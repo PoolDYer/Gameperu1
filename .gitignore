@@ -1,0 +1,15 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild*/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+.vs/
+*.csproj
+*.sln
+__pycache__/
+/SourceData/
+/Assets/MachuPicchu/Generated/
+/Assets/MachuPicchu/Generated.meta
+
+*.blend1

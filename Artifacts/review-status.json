@@ -1,0 +1,35 @@
+{
+  "overall": "NOT_ACCEPTED_AS_COMPLETE_RECONSTRUCTION",
+  "image": {
+    "exists": true,
+    "path": "Artifacts/Overview_INTERPRETIVE.png",
+    "type": "actual Blender render, not a photograph or AI concept"
+  },
+  "passed": [
+    "14 Python tests",
+    "heightfield extent 200 x 530 m",
+    "172 unique interpretive building objects",
+    "existing Blender FBX round-trip report"
+  ],
+  "failed_requirements": [
+    "Archaeological fidelity: generated rows and invented topography do not reconstruct the site",
+    "Ultrarealistic materials and geometry absent",
+    "Complete site coverage not established"
+  ],
+  "unverified": [
+    "Unity 6.6 compilation and import",
+    "Physics, stair traversal, all door clearances",
+    "Standalone game build",
+    "Performance and LOD budget",
+    "Real horizontal orientation and vertical datum"
+  ],
+  "network": {
+    "https://machupicchu360.com/visita-virtual/vista-panoramica/": "HTTP 200",
+    "https://machupicchu360.com/tour-virtual-360/": "HTTP 200",
+    "https://machupicchu.s3.us-east-2.amazonaws.com/04-vista-panoramica/index.htm": "proxy tunnel HTTP 403",
+    "https://360machupicchu.s3.us-east-2.amazonaws.com/index.htm": "proxy tunnel HTTP 403",
+    "https://services.api.unity.com/unity/editor/release/v1/releases?version=6000.6&limit=1": "proxy tunnel HTTP 403",
+    "https://doi.org/10.18800/boletindearqueologiapucp.202402.005": "proxy tunnel HTTP 403"
+  },
+  "geometry_changed_in_this_review": false
+}

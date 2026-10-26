@@ -1,0 +1,9 @@
+{
+  "buildingCount": 172,
+  "architectureMeshObjects": 198,
+  "architectureVertices": 447322,
+  "terrainVertices": 66049,
+  "terrainWidth": 200.0,
+  "terrainLength": 530.0,
+  "accuracy": "interpretive, not surveyed"
+}
